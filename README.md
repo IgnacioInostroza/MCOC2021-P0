@@ -4,7 +4,6 @@
 *Marca /modelo: HP EliteBook Revolve 810 G1
 *Tipo: Notebook
 *Año adquisición:2014
-
 *Procesador:
 *Marca/modelo:Intel(R) Core(TM) i5-3437U
 *Velocidad Base: 2,40 GHz
