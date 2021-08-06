@@ -22,9 +22,9 @@
   * Velocidad:
   * Numero de (SO)DIMM: 
 * Tarjeta Gráfica
-  * Marca / Modelo:
-  * Memoria dedicada:
-  * Resolución: 
+  * Marca / Modelo:Intel(R) HD Graphics 4000
+  * Memoria dedicada:2.00 GB
+  * Resolución: 1366 x 768 x 39 hercios
 * Disco 1: 
   * Marca: 
   * Tipo: 
