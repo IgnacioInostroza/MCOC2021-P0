@@ -64,17 +64,23 @@ Otra diferencia notoria es el rango de tamaños de matrices en los cuales el gra
 Por otra parte podemos ver que para el grafico de memoria utilizada, la linea de memoria limite en el grafico del profesor es a los 32 GB, mientras que el limite en mi grafico es a los 4 GB, ya que es la memoria RAM de mi computador.
 
 * ¿A qué se pueden deber las diferencias?  
+
 Las diferencias entre las corrridas del profesor con las mias, se puede deber a las especificaciones de cada computador, diferencias en el procesador y cantidad de núcleos e hilos.
 Por otra parte, las diferencias entre corridas realizadas en un mismo computador se debe a que este en cada corrida va optimizando recursos, lo cual produce estas variaciones, haciendose mas notorias en tamaños intermedios de matrices.
 
-* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?  
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser? 
+ 
 El grafico de uso de memoria es lineal, ya que el uso de memoria correspone al tamaño de la matriz en bytes, independientemente del tiempo que demore en ejecutar o los numeros que esta contenga, los bytes ocupados seran los mismos para un mismo tamaño de matriz N.
 
 * ¿Qué versión de python está usando?  
+
 La versión de python que estoy usando es la 3.8.3
 
 * ¿Qué versión de numpy está usando?  
+
 La versión de numpy que estoy usando es la 1.18.5.
+
+![Version](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Version.PNG)
 
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
  
