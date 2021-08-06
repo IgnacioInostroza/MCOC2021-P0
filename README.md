@@ -53,5 +53,7 @@
 
 # Desempeño MATMUL
 
+![Rendimiento](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Rendimiento_A%40B.png)
+
 
 
