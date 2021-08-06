@@ -22,20 +22,20 @@
   * Velocidad:
   * Numero de (SO)DIMM: 
 * Tarjeta Gráfica
-  * Marca / Modelo:Intel(R) HD Graphics 4000
-  * Memoria dedicada:2.00 GB
+  * Marca / Modelo: Intel(R) HD Graphics 4000
+  * Memoria dedicada: 2.00 GB
   * Resolución: 1366 x 768 x 39 hercios
 * Disco 1: 
-  * Marca: 
-  * Tipo: 
-  * Tamaño: 
-  * Particiones: 
+  * Marca: JMCR SD 
+  * Tipo: Removable Media
+  * Tamaño:14.83 GB (15.924.142.080 bytes) 
+  * Particiones: Disco #1, particion #0
   * Sistema de archivos:
 * Disco 2: 
-  * Marca:
-  * Tipo: 
-  * Tamaño: 
-  * Particiones: 
+  * Marca:Samsung
+  * Tipo: Disco duro fijo
+  * Tamaño: 119.24 GB
+  * Particiones: Disco #0, particiom #1
   * Sistema de archivos:
 * Disco 3: 
   * Marca:
