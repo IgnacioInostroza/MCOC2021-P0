@@ -7,48 +7,42 @@
 * Año adquisición: 2013
 * Procesador:
   * Marca/Modelo: Intel(R) Core(TM) i5-3437U
-  * Velocidad Base: 4.00 GHz
-  * Velocidad Máxima: 4.40 GHz
-  * Numero de núcleos: 4 
-  * Humero de hilos: 
+  * Velocidad Base: 2.40 GHz
+  * Numero de núcleos: 2 
+  * Numero de hilos: 
   * Arquitectura:x64 
   * Set de instrucciones: 
 * Tamaño de las cachés del procesador
-  * L1d: 32KB
-  * L1i: 32KB
-  * L2: 256KB
-  * L3: 8192KB
+  * L1: 128 kB
+  * L2: 512 kB
+  * L3: 3.0 MB
 * Memoria 
-  * Total: 32 GB
-  * Tipo memoria: DDR3
-  * Velocidad 1867 MHz
-  * Numero de (SO)DIMM: 4
+  * Total:
+  * Tipo memoria: 
+  * Velocidad:
+  * Numero de (SO)DIMM: 
 * Tarjeta Gráfica
-  * Marca / Modelo: Nvidia GeForce GTX 980M
-  * Memoria dedicada: 8192 MB
-  * Resolución: 1920 x 1080
+  * Marca / Modelo:
+  * Memoria dedicada:
+  * Resolución: 
 * Disco 1: 
-  * Marca: Samsung
-  * Tipo: SSD
-  * Tamaño: 1TB
-  * Particiones: 4
-  * Sistema de archivos: EXT4, swap
+  * Marca: 
+  * Tipo: 
+  * Tamaño: 
+  * Particiones: 
+  * Sistema de archivos:
 * Disco 2: 
-  * Marca: Samsung
-  * Tipo: SSD
-  * Tamaño: 1TB
-  * Particiones: 1
-  * Sistema de archivos: EXT4
+  * Marca:
+  * Tipo: 
+  * Tamaño: 
+  * Particiones: 
+  * Sistema de archivos:
 * Disco 3: 
-  * Marca: Samsung
-  * Tipo: SSD
-  * Tamaño: 1TB
-  * Particiones: 1
-  * Sistema de archivos: EXT4
-  
-* Dirección MAC de la tarjeta wifi: 5C:E0:C5:D7:EE:48 
-* Dirección IP (Interna, del router): 192.168.0.129
-* Dirección IP (Externa, del ISP): 190.45.122.34
+  * Marca:
+  * Tipo: 
+  * Tamaño: 
+  * Particiones: 
+  * Sistema de archivos:
 * Proveedor internet: Entel Fibra Optica
 
 # Desempeño MATMUL
@@ -74,7 +68,7 @@ El grafico de uso de memoria es lineal, ya que el uso de memoria correspone al t
 
 * ¿Qué versión de python está usando?  
 
-La versión de python que estoy usando es la 3.8.3
+La versión de python que estoy usando es la 3.8.3.
 
 * ¿Qué versión de numpy está usando?  
 
@@ -82,7 +76,13 @@ La versión de numpy que estoy usando es la 1.18.5.
 
 ![Version](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Version.PNG)
 
-* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
+* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar.
+
+Se utiliza solo un procesador.
+
+![Uso](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Uso.PNG)
+
+
  
 
 
