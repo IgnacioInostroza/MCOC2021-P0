@@ -47,9 +47,9 @@
 
 # Desempeño MATMUL
 
-(Mi codigo genera un archivo de texto para cada corrida, por lo cual solo subi tres archivos de texto correspondientes a las corridas 4, 6 y 8. Por otra parte el script de vizualizacion de resultados se encuentra dentro del script timing_matmul.py)
-
 ![Rendimiento](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Rendimiento_A%40B.png)
+
+(Mi codigo genera un archivo de texto para cada corrida, por lo cual solo subi tres archivos de texto correspondientes a las corridas 4, 6 y 8. Por otra parte el script de visualizacion de resultados se encuentra dentro del script timing_matmul.py)
 
 * ¿Como difiere del grafico del profesor/ayudante?  
 
