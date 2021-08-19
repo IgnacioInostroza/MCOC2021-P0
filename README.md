@@ -100,7 +100,12 @@ Como podemos ver en la imagen siguiente, se utilizan 4 procesadores logicos.
 ![3long](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso3_longdouble.png)
 ![3single](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso3_single.png)
 
+Observaciones:
+En primer lugar en relacion al caso 1 half, se puede ver en la imagen que este caso no corrio en mi computador.
+En segundolugar el caso 2 double erroja un error de falta de memoria para el caso 2 double para matrices de N=10000
+EN tercer lugar el caso 3 double y 3 half presentan el mismo problema de falta de memoria para llegando a N=3000 y N=5000 respectivamente
 
+Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejora el desempeño vs la opcionoverwrite_a=False(caso2). Ya que en los casos mas criticos como lo son matrices de N=10000, podemos ver que el tiempo en el caso 3 es menor.
 
 
 
