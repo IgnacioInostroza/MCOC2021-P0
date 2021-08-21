@@ -128,15 +128,14 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 #### Desempeño EIGH dtype=double
 ![eighdouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_double.png)
 
-¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo?
+Observaciones:
+Es importante mencionar que la parte B de esta entrega, el caso II al V se dividio en dos subcasos, para representar la opcion de usar overwrite False y True. Por lo tanto se subio en la carpeta de archivos 
+
+¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? ¿Qué algoritmo gana (en promedio) en cada caso? ¿Depende del tamaño de la matriz? 
 
 Al hacer un analisis de de la variabilidad del tiempo en los algoritmos que resuelven el sistema lineal Ax=b, podemos ver que el algoritmo que invierte la matriz A para luego multiplicarla por el vector b, presenta un mejor desempeño en matrices con un N menor a 20 para los dos tipos de datos (float y double). Sin embargo a medida que aumenta el tamaño N de la matriz, podemos ver que el mejor desempeño lo presenta la funcion **scipy.linalg.solve usando assume_a='pos'**(caso A.III), para los dos tipos de datos (float y double).
 
-Por otro lado, 
-
-¿Qué algoritmo gana (en promedio) en cada caso? 
-
-¿Depende del tamaño de la matriz? 
+Por otro lado, si analizamos el desempeño de los algoritmos que resuelven el problema de valores y vectores propios (EIGH), podemos ver que para matrices con N menor a 20, la funcion que presenta un mejor desempeño es la funcion **scipy.linalg.eigh con driver="evx" y overwrite=True**(caso B.V_2). Sim embargo para matrices con N mayor a 20 esta funcion se combierte en la funcion con mejor desempeño. La funcion con un peor desemepño para matrices pequeñas fue la funcion **Usar scipy.linalg.eigh con parámetros por defecto**(caso B.I). Como podemos ver en los graficos, el tipo de dato no influye en el desempeño de las distintas funciones.
 
 ¿A que se puede deber la superioridad de cada opción?
 
