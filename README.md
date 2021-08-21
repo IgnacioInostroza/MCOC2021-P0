@@ -133,5 +133,6 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 ¿Su computador usa más de un proceso por cada corrida? 
 
 ¿Que hay del uso de memoria (como crece)?
-El uso de memoria, como se puedo ver en la Entrega3, crece linealmente segun el tamaño de la mariz que se este operando. El uso de memoria depende netamente del tipo de dato que se esta usando para armar las matrices y es independiente del algoritmo o funcion empleada para la operacion. 
+
+El uso de memoria, como se puedo ver en la Entrega3, crece junto con el tamaño N de la matriz que se este operando. El uso de memoria depende netamente del tipo de dato que se esta usando para armar las matrices y es independiente del algoritmo o funcion empleada para la operacion. 
 
