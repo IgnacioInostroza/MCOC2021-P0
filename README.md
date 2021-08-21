@@ -110,15 +110,15 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 
 # P0E4 - Desempeño de SOLVE y EIGH
 
-####Desempeño SOLVE dtype=float
+#### Desempeño SOLVE dtype=float
 ![solvesingle](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_SOLVE_single.png)
 
-####Desempeño SOLVE dtype=double
+#### Desempeño SOLVE dtype=double
 ![solvedouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_SOLVE_double.png)
 
-####Desempeño EIGH dtype=float
+#### Desempeño EIGH dtype=float
 ![eighsingle](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_single.png)
 
-####Desempeño EIGH dtype=double
+#### Desempeño EIGH dtype=double
 ![eighdouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_double.png)
 
