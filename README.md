@@ -130,7 +130,7 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 
 ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo?
 
-Al hacer un analisis de de la variabilidad del tiempo en los algoritmos que resuelven el sistema lineal Ax=b, podemos ver que el algoritmo que invierte la matriz A para luego multiplicarla por el vector b, presenta un mejor desempeño en matrices con un N menor a 20 para los dos tipos de datos (float y double). Sin embargo a medida que aumenta el tamaño N de la matriz, podemos ver que el mejor desempeño lo presenta la funcion **scipy.linalg.solve usando assume_a='pos'**(caso A.III),para los dos tipos de datos (float y double).
+Al hacer un analisis de de la variabilidad del tiempo en los algoritmos que resuelven el sistema lineal Ax=b, podemos ver que el algoritmo que invierte la matriz A para luego multiplicarla por el vector b, presenta un mejor desempeño en matrices con un N menor a 20 para los dos tipos de datos (float y double). Sin embargo a medida que aumenta el tamaño N de la matriz, podemos ver que el mejor desempeño lo presenta la funcion **scipy.linalg.solve usando assume_a='pos'**(caso A.III), para los dos tipos de datos (float y double).
 
 Por otro lado, 
 
