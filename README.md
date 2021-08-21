@@ -86,15 +86,21 @@ Como podemos ver en la imagen siguiente, se utilizan 4 procesadores logicos.
 
 # P0E3 - Desempeño INV
 
+#### Caso 1
+
 ![1double](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/Rendimiento%20caso1_double.png)
 ![1half](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/half_error.PNG)
 ![1long](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/Rendimiento%20caso1_longdouble.png)
 ![1single](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/Rendimiento%20caso1_single.png)
- 
+
+#### Caso 2 
+
 ![2double](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso2_double.png)
 ![2half](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso2_half.png)
 ![2long](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso2_longdouble.png)
 ![2single](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso2_single.png)
+
+#### Caso 3
 
 ![3double](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso3_double.png)
 ![3half](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso3_half.png)
@@ -122,7 +128,11 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 #### Desempeño EIGH dtype=double
 ![eighdouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_double.png)
 
-¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? 
+¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo?
+
+Al hacer un analisis de de la variabilidad del tiempo en los algoritmos que resuelven el sistema lineal Ax=b, podemos ver que el algoritmo que invierte la matriz A para luego multiplicarla por el vector b, presenta un mejor desempeño en matrices con un N menor a 20 para los dos tipos de datos (float y double). Sin embargo a medida que aumenta el tamaño N de la matriz, podemos ver que el mejor desempeño lo presenta la funcion **scipy.linalg.solve usando assume_a='pos'**(caso A.III),para los dos tipos de datos (float y double).
+
+Por otro lado, 
 
 ¿Qué algoritmo gana (en promedio) en cada caso? 
 
