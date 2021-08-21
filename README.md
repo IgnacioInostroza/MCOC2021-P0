@@ -122,3 +122,16 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 #### Desempeño EIGH dtype=double
 ![eighdouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_double.png)
 
+¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? 
+
+¿Qué algoritmo gana (en promedio) en cada caso? 
+
+¿Depende del tamaño de la matriz? 
+
+¿A que se puede deber la superioridad de cada opción?
+
+¿Su computador usa más de un proceso por cada corrida? 
+
+¿Que hay del uso de memoria (como crece)?
+El uso de memoria, como se puedo ver en la Entrega3, crece linealmente segun el tamaño de la mariz que se este operando. El uso de memoria depende netamente del tipo de dato que se esta usando para armar las matrices y es independiente del algoritmo o funcion empleada para la operacion. 
+
