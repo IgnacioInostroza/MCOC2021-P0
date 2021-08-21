@@ -107,12 +107,13 @@ Como podemos ver en la imagen siguiente, se utilizan 4 procesadores logicos.
 ![3long](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso3_longdouble.png)
 ![3single](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Graficos%20Entrega3/Rendimiento%20caso3_single.png)
 
-Observaciones:
-En primer lugar en relacion al caso 1 half, se puede ver en la imagen que este caso no corrio en mi computador.
-En segundolugar el caso 2 double erroja un error de falta de memoria para el caso 2 double para matrices de N=10000
-EN tercer lugar el caso 3 double y 3 half presentan el mismo problema de falta de memoria para llegando a N=3000 y N=5000 respectivamente
+**Observaciones:**
+En primer lugar en relacion al caso 1 half, se puede ver en la imagen que este caso no corrio en mi computador. Esto se puede deber a que scipy trabaja transformando por ejemplo un dato de tipo  half en single o un dato de tipo double en longdouble, lo cual podria arrojar ese error  
+En segundo lugar el caso 2 double erroja un error de falta de memoria para el caso 2 double para matrices de N=10000
+EN tercer lugar el caso 3 double y 3 half presentan el mismo problema de falta de memoria, llegando a N=3000 y N=5000 respectivamente
 
-Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejora el desempeño vs la opcionoverwrite_a=False(caso2). Ya que en los casos mas criticos como lo son matrices de N=10000, podemos ver que el tiempo en el caso 3 es menor.
+Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejora el desempeño vs la opcionoverwrite_a=False(caso2). Ya que en los casos mas criticos, como lo son matrices de N=10000, podemos ver que el tiempo en el caso 3 es menor.
+
 
 # P0E4 - Desempeño de SOLVE y EIGH
 
@@ -129,7 +130,9 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 ![eighdouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_double.png)
 
 **Observaciones:**
-Es importante mencionar que la parte B de esta entrega, los casos II al V se dividieron en dos subcasos, para asi poder representar la opcion de usar overwrite False y True. Esto se puede ver reflejado tanto en la leyenda de los graficos EIGH como en los archivos generados para cada tipo de dato.
+
+Es importante mencionar que la parte B de esta entrega, los casos II al V se dividieron en dos subcasos, para asi poder representar la opcion de usar overwrite=False(1) y overwrite=True(2). Esto se puede ver reflejado tanto en la leyenda de los graficos EIGH como en los archivos generados para cada tipo de dato.
+
 Otra observacion importante, son los tamaños de matrices evaludas. Escribi un codigo para las funciones SOLVE y otro para las EIGH, corri ambos codigos para N mayores a 5000 sin embargo luego de dejar corriendo por aproxiadamente 1 hora el codigo, decidi llegar a tamaños menores, ya que por temas tiempo no alcanzaria a realizar 10 corridas para matrices de tamaños superiores, ademas de no quise sobre exigir mi computador. Debido a esto, con la funcion SOLVE solo corri hasta N=5000 y con la funcion EIGH llegue hasta N=2000, lo cual me permitio realizar un analisis de desempeño de igual manera.
 
 ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? ¿Qué algoritmo gana (en promedio) en cada caso? ¿Depende del tamaño de la matriz? 
