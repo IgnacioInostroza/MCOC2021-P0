@@ -143,7 +143,7 @@ Por otro lado, si analizamos el desempeño de los algoritmos que resuelven el pr
 
 ¿A que se puede deber la superioridad de cada opción?
 
-¿Su computador usa más de un proceso por cada corrida? 
+Como se menciono anteriormente, el desempeño del algoritmo que primero invierte la matriz para lugeo multiplicarla, fue mejor que el de otras funciones predeterminadas, a diferencia de lo que se esperaba. Esto se puede deber a el tamaño de matrices, mientras menor sea el tamaño, el computador se comportara de manera mas variable optimizando sus recursos de diferentes maneras, ya que tiene mas opciones o mas memoria disponible. Por otra parte si nos fijamos en tamaños mas grandes de matrices, podemos ver que los desempeños son bastante parecidos entre cada funcion. 
 
 ¿Que hay del uso de memoria (como crece)?
 
