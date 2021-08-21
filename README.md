@@ -128,8 +128,9 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 #### Desempeño EIGH dtype=double
 ![eighdouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_double.png)
 
-Observaciones:
-Es importante mencionar que la parte B de esta entrega, el caso II al V se dividio en dos subcasos, para representar la opcion de usar overwrite False y True. Por lo tanto se subio en la carpeta de archivos 
+**Observaciones:**
+Es importante mencionar que la parte B de esta entrega, los casos II al V se dividieron en dos subcasos, para asi poder representar la opcion de usar overwrite False y True. Esto se puede ver reflejado tanto en la leyenda de los graficos EIGH como en los archivos generados para cada tipo de dato.
+Otra observacion importante, son los tamaños de matrices evaludas. Escribi un codigo para las funciones SOLVE y otro para las EIGH, corri ambos codigos para N mayores a 5000 sin embargo luego de dejar corriendo por aproxiadamente 1 hora el codigo, decidi llegar a tamaños menores, ya que por temas tiempo no alcanzaria a realizar 10 corridas para matrices de tamaños superiores, ademas de no quise sobre exigir mi computador. Debido a esto, con la funcion SOLVE solo corri hasta N=5000 y con la funcion EIGH llegue hasta N=2000, lo cual me permitio realizar un analisis de desempeño de igual manera.
 
 ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? ¿Qué algoritmo gana (en promedio) en cada caso? ¿Depende del tamaño de la matriz? 
 
