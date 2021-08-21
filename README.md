@@ -85,6 +85,7 @@ Como podemos ver en la imagen siguiente, se utilizan 4 procesadores logicos.
 ![Uso](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Uso.PNG)
 
 # P0E3 - Desempeño INV
+
 ![1double](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/Rendimiento%20caso1_double.png)
 ![1half](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/half_error.PNG)
 ![1long](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/Rendimiento%20caso1_longdouble.png)
@@ -109,5 +110,15 @@ Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejo
 
 # P0E4 - Desempeño de SOLVE y EIGH
 
+####Desempeño SOLVE dtype=float
+![solvesingle](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_SOLVE_single.png)
 
+####Desempeño SOLVE dtype=double
+![solvedouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_SOLVE_double.png)
+
+####Desempeño EIGH dtype=float
+![eighsingle](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_single.png)
+
+####Desempeño EIGH dtype=double
+![eighdouble](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%204/Desempe%C3%B1o_EIGH_double.png)
 
