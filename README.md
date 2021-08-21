@@ -84,7 +84,7 @@ Como podemos ver en la imagen siguiente, se utilizan 4 procesadores logicos.
 
 ![Uso](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Uso.PNG)
 
-# Desempeño INV (Entrega 3)
+# P0E3 - Desempeño INV
 ![1double](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/Rendimiento%20caso1_double.png)
 ![1half](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/half_error.PNG)
 ![1long](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Graficos%20Entrega3/Rendimiento%20caso1_longdouble.png)
@@ -106,6 +106,8 @@ En segundolugar el caso 2 double erroja un error de falta de memoria para el cas
 EN tercer lugar el caso 3 double y 3 half presentan el mismo problema de falta de memoria para llegando a N=3000 y N=5000 respectivamente
 
 Al comparar los graficos se puede ver que la opcion overwrite_a=True(caso3) mejora el desempeño vs la opcionoverwrite_a=False(caso2). Ya que en los casos mas criticos como lo son matrices de N=10000, podemos ver que el tiempo en el caso 3 es menor.
+
+# P0E4 - Desempeño de SOLVE y EIGH
 
 
 
