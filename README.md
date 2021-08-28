@@ -163,17 +163,22 @@ El uso de memoria, como se puedo ver en la Entrega3, crece junto con el tamaño 
 
 **Observaciones:**
 
-Una primera observacion importante de mencionar es el tamaño N de las matrices utilizadas para la evaluacion. Por una lado estaba el algoritmo que utiliza la matriz de tipo despersa, en el cual se logro evaluar matrices con N = 20000. Por otra parte, en el algoritmo que utiliza matriz llena, solo se logró llegar a matrices de tamaño N=8000, ya que para matrices de mayor tamaño el programa Python arrojaba el siguiente error de falta de memoria:
+Una primera observacion importante de mencionar es el tamaño N de las matrices utilizadas para la evaluacion. Por una lado esta el algoritmo que utiliza la matriz de tipo despersa, en el cual se logro evaluar matrices con N = 20000. Por otra parte, en el algoritmo que utiliza matriz llena, solo se logró llegar a matrices de tamaño N=8000, ya que para matrices de mayor tamaño el programa Python arrojaba el siguiente error de falta de memoria:
 
 ![error](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%205/error.PNG)
 
-Ahora bien, en relacion al armado de la matriz, el proceso utilizado en la generacion de la pariz laplaciana a lo largo de todo el Proyecto 0, ha sido mediante el uso de la libreria numpy. Esta libreria, si bien permite el armado de matrices en unas pocas lineas de codigo, podria ser una opcion "cara" en recursos computacionales, sobretodo para matrices cuyo N sea muy grande, ya que esta libreria almacena todos los ceros presentes en la matriz, por lo que si posteriormente se desea cambiar el formato de la matriz, esto seria muy poco eficiente y muy lento.
-Es por esto que en esta entrega, se estudia el comportamiento de dos algoritmos al resolver la multiplicacion de dos matrices. Uno de los algoritmos "MATMUL_llena" arma estas matrices de la misma forma que se ha hecho a lo largo del Proyecto 0. 
+Ahora bien, en relacion al armado de la matriz, el algoritmo utilizado en la generacion de la mariz laplaciana a lo largo de todo el Proyecto 0, ha sido mediante el uso de la libreria numpy. Esta libreria, si bien permite el armado de matrices en unas pocas lineas de codigo, podria ser una opcion "cara" en recursos computacionales, sobretodo para matrices cuyo N sea muy grande, ya que esta libreria almacena todos los ceros presentes en la matriz, por lo que si posteriormente se desea cambiar el formato de la matriz, esto seria muy poco eficiente y muy lento.
+
+Es por esto que en esta entrega, se estudia el desempeño de dos algoritmos al moemnto de armar y resolver la multiplicacion de dos matrices. Uno de los algoritmos "MATMUL_llena" arma estas matrices de la misma forma que se ha hecho a lo largo del Proyecto 0.
+
 Por otra parte, el algoritmo "MATMUL_dispersa" utiliza el sieguiente codigo para el armado de la matriz:
 ```
 def matriz_laplaciana_dispersa(N, t=np.double):    # funcion obtenida de clases para formar matriz dispersa
     return sparse.eye(N,dtype=t)-sparse.eye(N,N,1,dtype=t)
 ```
+Como podemos ver en los graficos correspondientes a esta entrega, la opcion de llenar la matriz mediante la libreria scipy.sparse (matrzi dispersa), se puede notar como el tiempo de llenado y de solucion es mucho menor que la opcion de utilizar la matriz llena. Ademas se puede ver como en el grafico Matriz_llena, la curva que esta describe se encuentra debajo de la reacta que representa una complejidad O(N^2), mientras que en el grafico Matriz_dispersa, se puede ver como la curva generada se encuntra por sobre la recta O(N), lo cual evidencia la diferencia en comlejidad computacional entre ambas opciones.
+
+Otra observacion importante respecto al uso de matrices dispersas, es la curva generada, cuyo comportamiento es casi constante para matrices con N pequeños. Esto indica que el alrgoritmo que ultiliza scipy.sparse se demora practicamente el mismo tiempo en operar con matrices con N=2 que con N=5000. Esto comprueba que al armar matrices dispersas, la opercion y llenado es mucho mas eficiente, ya que solo operan las diagonales o algunos elementos puntuales de las matrices, sin la necesidad de almacenanr ni operar los ceros de relleno que otros metodos de armado utilizan.    
 
 
 
