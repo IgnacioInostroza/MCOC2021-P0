@@ -151,3 +151,13 @@ Como se menciono anteriormente, el desempeño del algoritmo que primero invierte
 
 El uso de memoria, como se puedo ver en la Entrega3, crece junto con el tamaño N de la matriz que se este operando. El uso de memoria depende netamente del tipo de dato que se esta usando para armar las matrices y es independiente del algoritmo o funcion empleada para la operacion. 
 
+# P0E5 - Matrices dispersas y complejidad computacional
+
+#### Complejidad algorítmica de MATMUL
+
+#### Matriz LLena
+![Matmulllena]()
+
+#### Matriz Dispersa
+![Matmuldispersa]()
+
