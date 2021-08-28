@@ -167,5 +167,13 @@ Una primera observacion importante de mencionar es el tamaño N de las matrices 
 
 ![error](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%205/error.PNG)
 
+Ahora bien, en relacion al armado de la matriz, el proceso utilizado en la generacion de la pariz laplaciana a lo largo de todo el Proyecto 0, ha sido mediante el uso de la libreria numpy. Esta libreria, si bien permite el armado de matrices en unas pocas lineas de codigo, podria ser una opcion "cara" en recursos computacionales, sobretodo para matrices cuyo N sea muy grande, ya que esta libreria almacena todos los ceros presentes en la matriz, por lo que si posteriormente se desea cambiar el formato de la matriz, esto seria muy poco eficiente y muy lento.
+Es por esto que en esta entrega, se estudia el comportamiento de dos algoritmos al resolver la multiplicacion de dos matrices. Uno de los algoritmos "MATMUL_llena" arma estas matrices de la misma forma que se ha hecho a lo largo del Proyecto 0. 
+Por otra parte, el algoritmo "MATMUL_dispersa" utiliza el sieguiente codigo para el armado de la matriz:
+```
+def matriz_laplaciana_dispersa(N, t=np.double):    # funcion obtenida de clases para formar matriz dispersa
+    return sparse.eye(N,dtype=t)-sparse.eye(N,N,1,dtype=t)
+```
+
 
 
