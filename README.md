@@ -164,6 +164,7 @@ El uso de memoria, como se puedo ver en la Entrega3, crece junto con el tamaño 
 **Observaciones:**
 
 Una primera observacion importante de mencionar es el tamaño N de las matrices utilizadas para la evaluacion. Por una lado estaba el algoritmo que utiliza la matriz de tipo despersa, en el cual se logro evaluar matrices con N = 20000. Por otra parte, en el algoritmo que utiliza matriz llena, solo se logró llegar a matrices de tamaño N=8000, ya que para matrices de mayor tamaño el programa Python arrojaba el siguiente error de falta de memoria:
+
 ![error](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%205/error.PNG)
 
 
