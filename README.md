@@ -45,7 +45,7 @@
   * Sistema de archivos:
 * Proveedor internet: Entel Fibra Optica
 
-# Desempeño MATMUL
+# P0E2 - Desempeño de la funcion MATMUL
 
 ![Rendimiento](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Rendimiento_A%40B.png)
 
@@ -84,7 +84,7 @@ Como podemos ver en la imagen siguiente, se utilizan 4 procesadores logicos.
 
 ![Uso](https://raw.githubusercontent.com/IgnacioInostroza/MCOC2021-P0/main/Uso.PNG)
 
-# P0E3 - Desempeño INV
+# P0E3 - Desempeño de INV
 
 #### Caso 1
 
@@ -185,20 +185,20 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 #### Complejidad algorítmica de SOLVE
 
 #### Matriz LLena
-![SOLVEllena]()
+![SOLVEllena](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/Solve_LL.png)
 
 #### Matriz Dispersa
-![SOLVEdispersa]()
+![SOLVEdispersa](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/Solve_D.png)
 
 **Observaciones:**
 
 #### Complejidad algorítmica de INV
 
 #### Matriz LLena
-![INVllena]()
+![INVllena](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/INV_LL.png)
 
 #### Matriz Dispersa
-![INVdispersa]()
+![INVdispersa](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/INV_D.png)
 
 **Observaciones:**
 
