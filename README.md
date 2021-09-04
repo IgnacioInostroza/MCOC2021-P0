@@ -151,7 +151,7 @@ Como se menciono anteriormente, el desempeño del algoritmo que primero invierte
 
 El uso de memoria, como se puedo ver en la Entrega3, crece junto con el tamaño N de la matriz que se este operando. El uso de memoria depende netamente del tipo de dato que se esta usando para armar las matrices y es independiente del algoritmo o funcion empleada para la operacion. 
 
-# P0E5 - Matrices dispersas y complejidad computacional
+# P0E5 - Matrices dispersas y complejidad computacional (Parte 1)
 
 #### Complejidad algorítmica de MATMUL
 
@@ -180,5 +180,25 @@ Como podemos ver en los graficos correspondientes a esta entrega, la opcion de l
 
 Otra observacion importante respecto al uso de matrices dispersas, es la curva generada, cuyo comportamiento es casi constante para todo tamaño N, pequeños y mas grandes. Esto indica que el alrgoritmo que ultiliza scipy.sparse se demora practicamente el mismo tiempo en operar, por ejemplo, matrices con N=2 y N=5000. Esto comprueba que al armar matrices dispersas, la opercion y llenado es mucho mas eficiente, ya que solo operan las diagonales o algunos elementos puntuales de las matrices, sin la necesidad de almacenanr ni operar los ceros de relleno que otros metodos de armado utilizan.    
 
+# P0E6 - "Matrices dispersas y complejidad computacional" (Parte 2 y 3)
 
+#### Complejidad algorítmica de SOLVE
+
+#### Matriz LLena
+![SOLVEllena]()
+
+#### Matriz Dispersa
+![SOLVEdispersa]()
+
+**Observaciones:**
+
+#### Complejidad algorítmica de INV
+
+#### Matriz LLena
+![INVllena]()
+
+#### Matriz Dispersa
+![INVdispersa]()
+
+**Observaciones:**
 
