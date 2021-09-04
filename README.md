@@ -234,8 +234,11 @@ Por otra parte, para el caso de mas matrices dispersas, el tiempo permanece prac
 Dado que mi codigo grafica el promedio de las 10 corridas, no se puede evaluar la estabilidad entre corridas, sin embargo si observamos los graficos, podemos ver que curva que describen los tiempos, son estables para practicamente todos los tamaños N, salvo para las matrices de tamaño N=30-50 aproximadamente, rango en el cual existen variaciones.
 
 ** Comentarios generales "Matrices dispersas y complejidad computacional" (Parte 1, 2 y 3):**
-Como se puede ver en los archivos que forman parte de la entrega, existe un unico codigo que evalua las tres funciones, tanto para matriz dispersa y llena, esto se hizo para evitar subir tantos archivos de codigo y un mejor orden. Sin embargo mientras escribia el codigo, fui evaluando una a una las funciones para los dos tipos de matrices y puede comprobar que mi computador lograba operar matrices significativamente meyores en el caso de tener una matriz del tipo dispersa. No se pudo seguir evaluando mayores tamaños de matrices, ya que el codigo arrojaba el siguiente MemoryError:
-![Merror]()
+
+Como se puede ver en los archivos que forman parte de la entrega, existe un unico codigo que evalua las tres funciones, tanto para matriz dispersa y llena, esto se hizo para evitar subir tantos archivos de codigo y un mejor orden. Sin embargo mientras escribia el codigo, fui evaluando una a una las funciones para los dos tipos de matrices y puede comprobar que mi computador lograba operar matrices significativamente meyores en el caso de tener una matriz del tipo dispersa. 
+
+No se pudo seguir evaluando mayores tamaños de matrices, ya que el codigo arrojaba el siguiente MemoryError:
+![Merror](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/MemoryError.PNG)
 
 
 El código de ensamblaje de la matriz laplaciana dispersa usado para esta entrega fue extraido del codigo mostrado por el profesor en clases y corresponde al siguiente:
