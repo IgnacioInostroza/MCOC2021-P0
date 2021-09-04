@@ -194,7 +194,7 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 
 ¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
 
-La hipotesis de que el desempeño de la funcion INV sobre una matriz A del tipo dispersa es significativamente mejor que el desempeño de esta funcion sobre una matriz A del tipo llena, se cumple. Ya que, como podemos ver en los graficos, el tiempo de solucion para una matriz dispersa con N=6000 el tiempo de solucion es de aproximadamente 10 milisegundos, mientras que el tiempo de solucion en el caso de una matriz llena de N=6000 es de 10 segundos aproxiamdanete.
+La hipotesis de que el desempeño de la funcion **SOLVE** sobre una matriz A del tipo dispersa es significativamente mejor que el desempeño de esta funcion sobre una matriz A del tipo llena, se cumple. Ya que, como podemos ver en los graficos, el tiempo de solucion para una matriz dispersa con N=6000 el tiempo de solucion es de aproximadamente 10 milisegundos, mientras que el tiempo de solucion en el caso de una matriz llena de N=6000 es de 10 segundos aproxiamdanete.
 Por otra parte, en relacion a el tipo de matris dispersa, se evaluaron los codigos utilizando CSR_matriz, sin embago el codigo arrojo un SparseEfficiencyWarning, recomendando armar la matriz con CSC_matrix.
 En relacion a la complegidad asintotica podemos ver que para el caso matriz llena, el tiempo de solucion se encuentra bordenado la recta O(N^3), mientras que para el caso matriz dispersa, la complejidad bordea la recta O(N)
 
@@ -221,7 +221,7 @@ Dado que mi codigo grafica el promedio de las 10 corridas, no se puede evaluar l
 
 ¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
 
-La hipotesis de que el desempeño de la funcion INV sobre una matriz A del tipo dispersa es significativamente mejor que el desempeño de esta funcion sobre una matriz A del tipo llena, se cumple. Ya que, como podemos ver en los graficos, el tiempo de solucion para una matriz dispersa con N=6000 el tiempo de solucion es de aproximadamente 10 segundos, mientras que el tiempo de solucion en el caso de una matriz llena de N=6000 es de medio minuto aproxiamdanete.
+La hipotesis de que el desempeño de la funcion **INV** sobre una matriz A del tipo dispersa es significativamente mejor que el desempeño de esta funcion sobre una matriz A del tipo llena, se cumple. Ya que, como podemos ver en los graficos, el tiempo de solucion para una matriz dispersa con N=6000 el tiempo de solucion es de aproximadamente 10 segundos, mientras que el tiempo de solucion en el caso de una matriz llena de N=6000 es de medio minuto aproxiamdanete.
 En relacion a la complegidad asintotica podemos ver que para el caso matriz llena, el tiempo de solucion se encuentra por debajo de la complejidad O(N^3), mientras que para el caso matriz dispersa, la complejidad bordea la recta O(N^3)
 
 ¿Como afecta el tamaño de las matrices al comportamiento aparente?
@@ -248,5 +248,4 @@ def matriz_laplaciana_dispersa(N, t=np.double):    # funcion obtenida de clases 
     d=sparse.eye(N, N, 1, dtype=t)
     return 2 * sparse.eye(N,dtype=t) - d - d.T
 ```
-
 
