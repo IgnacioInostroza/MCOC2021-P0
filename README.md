@@ -182,7 +182,7 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 
 # P0E6 - "Matrices dispersas y complejidad computacional" (Parte 2 y 3)
 
-### **Complejidad algorítmica de SOLVE**
+### Complejidad algorítmica de SOLVE
 
 #### Matriz LLena
 ![SOLVEllena](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/Solve_LL.png)
