@@ -178,7 +178,7 @@ def matriz_laplaciana_dispersa(N, t=np.double):    # funcion obtenida de clases 
 ```
 Como podemos ver en los graficos correspondientes a esta entrega, la opcion de llenar la matriz mediante la libreria scipy.sparse (matriz dispersa), se puede notar como el tiempo de llenado y de solucion es mucho menor que la opcion de utilizar la matriz llena. Ademas se puede ver como en el grafico Matriz_llena, la curva que esta describe se encuentra debajo de la reacta que representa una complejidad O(N^2), mientras que en el grafico Matriz_dispersa, se puede ver como la curva generada se encuntra por sobre la recta O(N), lo cual evidencia la diferencia en complejidad computacional entre ambas opciones.
 
-Otra observacion importante respecto al uso de matrices dispersas, es la curva generada, cuyo comportamiento es casi constante para todo tamaño N, pequeños y mas grandes. Esto indica que el alrgoritmo que ultiliza scipy.sparse se demora practicamente el mismo tiempo en operar, por ejemplo, matrices con N=2 y N=5000. Esto comprueba que al armar matrices dispersas, la opercion y llenado es mucho mas eficiente, ya que solo operan las diagonales o algunos elementos puntuales de las matrices, sin la necesidad de almacenanr ni operar los ceros de relleno que otros metodos de armado utilizan.    
+Otra observacion importante respecto al uso de matrices dispersas, es la curva generada, cuyo comportamiento es casi constante para todo tamaño N, pequeños y mas grandes. Esto indica que el alrgoritmo que ultiliza scipy.sparse se demora practicamente el mismo tiempo en operar, por ejemplo, matrices con N=2 y N=5000. Esto comprueba que al armar matrices dispersas, la opercion y llenado es mucho mas eficiente, ya que solo operan las diagonales o algunos elementos puntuales de las matrices, sin la necesidad de almacenanr ni operar los ceros de relleno que otros metodos de armado utilizan.
 
 # P0E6 - "Matrices dispersas y complejidad computacional" (Parte 2 y 3)
 
@@ -190,7 +190,6 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 #### Matriz Dispersa
 ![SOLVEdispersa](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/Solve_D.png)
 
-**Observaciones:**
 
 ### Complejidad algorítmica de INV
 
@@ -201,4 +200,11 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 ![INVdispersa](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/INV_D.png)
 
 **Observaciones:**
+
+
+
+Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
+¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
+¿Como afecta el tamaño de las matrices al comportamiento aparente?
+¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
 
