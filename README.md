@@ -153,7 +153,7 @@ El uso de memoria, como se puedo ver en la Entrega3, crece junto con el tamaño 
 
 # P0E5 - Matrices dispersas y complejidad computacional (Parte 1)
 
-#### Complejidad algorítmica de MATMUL
+### Complejidad algorítmica de MATMUL
 
 #### Matriz LLena
 ![Matmulllena](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%205/Matmul_Llena.png)
@@ -182,7 +182,7 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 
 # P0E6 - "Matrices dispersas y complejidad computacional" (Parte 2 y 3)
 
-**#### Complejidad algorítmica de SOLVE**
+### **Complejidad algorítmica de SOLVE**
 
 #### Matriz LLena
 ![SOLVEllena](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/Solve_LL.png)
@@ -192,7 +192,7 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 
 **Observaciones:**
 
-#### Complejidad algorítmica de INV
+### Complejidad algorítmica de INV
 
 #### Matriz LLena
 ![INVllena](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/INV_LL.png)
