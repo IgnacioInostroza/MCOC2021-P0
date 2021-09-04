@@ -190,6 +190,24 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 #### Matriz Dispersa
 ![SOLVEdispersa](https://github.com/IgnacioInostroza/MCOC2021-P0/blob/main/Entrega%206/Solve_D.png)
 
+**Observaciones:**
+
+¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
+
+La hipotesis de que el desempeño de la funcion INV sobre una matriz A del tipo dispersa es significativamente mejor que el desempeño de esta funcion sobre una matriz A del tipo llena, se cumple. Ya que, como podemos ver en los graficos, el tiempo de solucion para una matriz dispersa con N=6000 el tiempo de solucion es de aproximadamente 10 milisegundos, mientras que el tiempo de solucion en el caso de una matriz llena de N=6000 es de 10 segundos aproxiamdanete.
+Por otra parte, en relacion a el tipo de matris dispersa, se evaluaron los codigos utilizando CSR_matriz, sin embago el codigo arrojo un SparseEfficiencyWarning, recomendando armar la matriz con CSC_matrix.
+En relacion a la complegidad asintotica podemos ver que para el caso matriz llena, el tiempo de solucion se encuentra bordenado la recta O(N^3), mientras que para el caso matriz dispersa, la complejidad bordea la recta O(N)
+
+¿Como afecta el tamaño de las matrices al comportamiento aparente?
+
+Como podemos ver en los graficos, en el caso de las matrices llenas el tiemo de solucion aumenta a medida que N aumenta, haciendose mas notorio el aumento para N mas grandes.
+Por otra parte, para el caso de mas matrices dispersas, el tiempo permanece practcamente constante para todo N 
+
+¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
+
+Dado que mi codigo grafica el promedio de las 10 corridas, no se puede evaluar la estabilidad entre corridas, sin embargo si observamos los graficos, podemos ver que curva que describen los tiempos, son estables para practicamente todos los tamaños N, salvo para las matrices de tamaño N=30-50 aproximadamente, rango en el cual existen variaciones.
+
+
 
 ### Complejidad algorítmica de INV
 
@@ -201,10 +219,30 @@ Otra observacion importante respecto al uso de matrices dispersas, es la curva g
 
 **Observaciones:**
 
-
-
-Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
 ¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
+
+La hipotesis de que el desempeño de la funcion INV sobre una matriz A del tipo dispersa es significativamente mejor que el desempeño de esta funcion sobre una matriz A del tipo llena, se cumple. Ya que, como podemos ver en los graficos, el tiempo de solucion para una matriz dispersa con N=6000 el tiempo de solucion es de aproximadamente 10 segundos, mientras que el tiempo de solucion en el caso de una matriz llena de N=6000 es de medio minuto aproxiamdanete.
+En relacion a la complegidad asintotica podemos ver que para el caso matriz llena, el tiempo de solucion se encuentra por debajo de la complejidad O(N^3), mientras que para el caso matriz dispersa, la complejidad bordea la recta O(N^3)
+
 ¿Como afecta el tamaño de las matrices al comportamiento aparente?
+
+Como podemos ver en los graficos, en el caso de las matrices llenas el tiemo de solucion aumenta a medida que N aumenta, haciendose mas notorio el aumento para N mas grandes.
+Por otra parte, para el caso de mas matrices dispersas, el tiempo permanece practcamente constante para todo N 
+
 ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
+
+Dado que mi codigo grafica el promedio de las 10 corridas, no se puede evaluar la estabilidad entre corridas, sin embargo si observamos los graficos, podemos ver que curva que describen los tiempos, son estables para practicamente todos los tamaños N, salvo para las matrices de tamaño N=30-50 aproximadamente, rango en el cual existen variaciones.
+
+** Comentarios generales "Matrices dispersas y complejidad computacional" (Parte 1, 2 y 3):**
+Como se puede ver en los archivos que forman parte de la entrega, existe un unico codigo que evalua las tres funciones, tanto para matriz dispersa y llena, esto se hizo para evitar subir tantos archivos de codigo y un mejor orden. Sin embargo mientras escribia el codigo, fui evaluando una a una las funciones para los dos tipos de matrices y puede comprobar que mi computador lograba operar matrices significativamente meyores en el caso de tener una matriz del tipo dispersa. No se pudo seguir evaluando mayores tamaños de matrices, ya que el codigo arrojaba el siguiente MemoryError:
+![Merror]()
+
+
+El código de ensamblaje de la matriz laplaciana dispersa usado para esta entrega fue extraido del codigo mostrado por el profesor en clases y corresponde al siguiente:
+```
+def matriz_laplaciana_dispersa(N, t=np.double):    # funcion obtenida de clases para formar matriz dispersa
+    d=sparse.eye(N, N, 1, dtype=t)
+    return 2 * sparse.eye(N,dtype=t) - d - d.T
+```
+
 
